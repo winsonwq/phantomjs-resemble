@@ -1,8 +1,8 @@
 {
   "name": "phantomjs-resemble",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "running resemble in phantomjs",
-  "main": "index.js",
+  "main": "phantomjs-resemble.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/windonwq/phantomjs-resemble.git"
@@ -30,5 +30,5 @@
     "resemble.js",
     "viff",
     "image diff"
-  ],
+  ]
 }

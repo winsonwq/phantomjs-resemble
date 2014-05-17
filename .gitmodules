@@ -1,0 +1,3 @@
+[submodule "Resemble.js"]
+	path = Resemble.js
+	url = git@github.com:Huddle/Resemble.js.git

@@ -1,4 +1,5 @@
 var phantom = require('phantom');
+var PATH = require('path');
 
 module.exports = Resemble;
 
@@ -27,7 +28,7 @@ Resemble.prototype = {
           self.ph = ph;
           self.page = page;
 
-          self.page.injectJs('Resemble.js/resemble.js', function () {
+          self.page.injectJs(PATH.join(__dirname, 'Resemble.js/resemble.js'), function () {
             cb.call(self);
           });
         });

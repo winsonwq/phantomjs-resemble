@@ -20,3 +20,8 @@ new Resemble().compare(image1, image2, function (data) {
 ```
 
 Read more in `test.js`.
+
+
+## History
+
+*0.1.0*: Support running in Windows by setting "binary" as "phantomjs.cmd" instead of "phantomjs"

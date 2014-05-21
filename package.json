@@ -1,6 +1,6 @@
 {
   "name": "phantomjs-resemble",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "running resemble in phantomjs",
   "main": "phantomjs-resemble.js",
   "repository": {
@@ -23,7 +23,7 @@
     }
   ],
   "dependencies": {
-    "phantom": "~0.6.1"
+    "phantom": "^0.6.1"
   },
   "keywords": [
     "phantomjs",

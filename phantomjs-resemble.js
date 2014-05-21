@@ -23,7 +23,8 @@ Resemble.prototype = {
   _preparePhantomResemble: function (cb) {
     var self = this;
     if (!self.page || !self.ph) {
-      var platform = process.platform == 'win32' ? 'phantomjs.cmd' : 'phantomjs'
+      var platform = process.platform == 'win32' ? 'phantomjs.cmd' : 'phantomjs';
+      var usingWeak = process.platform != 'win32';
       phantom.create(function (ph) {
         ph.createPage(function (page) {
           self.ph = ph;
@@ -34,7 +35,10 @@ Resemble.prototype = {
           });
         });
       }, {
-        binary: platform
+        binary: platform,
+        dnodeOpts: {
+          weak: usingWeak
+        }
       });
     } else {
       cb.call(self);
